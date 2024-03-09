@@ -57,7 +57,7 @@ export class SchemasProvider extends Construct {
     super(scope, id);
 
     const providerFunc = new lambda.Function(this, "Function", {
-      runtime: lambda.Runtime.JAVA_11,
+      runtime: lambda.Runtime.JAVA_17,
       description: "[Matano] Custom resource for creating schemas.",
       handler: "com.matano.iceberg.MatanoSchemasLayerCustomResource::handleRequest",
       memorySize: 1024,

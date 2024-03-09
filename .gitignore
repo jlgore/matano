@@ -10,6 +10,7 @@ dist
 .matano
 lib/scripts
 .python-version
+org-matano
 
 # CDK asset staging directory
 .cdk.staging
