@@ -156,7 +156,7 @@ export class IcebergTableProvider extends Construct {
     super(scope, id);
 
     const providerFunc = new lambda.Function(this, "Function", {
-      runtime: lambda.Runtime.JAVA_11,
+      runtime: lambda.Runtime.JAVA_17,
       handler: "com.matano.iceberg.MatanoIcebergTableCustomResource::handleRequest",
       description: "[Matano] This function provides the Cloudformation custom resource for a Matano Iceberg table.",
       memorySize: 1024,
